@@ -2,7 +2,7 @@
 
 from django.contrib import admin
 from django.urls import path
-from payment import views
+from payments import views
 
 urlpatterns = [
 	path('', views.homepage, name='index'),

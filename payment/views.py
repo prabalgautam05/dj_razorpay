@@ -3,18 +3,10 @@ import razorpay
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponseBadRequest
-# Removed unused import
-# Removed unused import
-from dj_razorpay.config import RAZOR_KEY_ID, RAZOR_KEY_SECRET
-# Removed unused import
 
-
-
-# authorize razorpay client with API Keys.
 razorpay_client = razorpay.Client(
-	auth=(RAZOR_KEY_ID, RAZOR_KEY_SECRET))
-
-
+    auth=(settings.RAZOR_KEY_ID, settings.RAZOR_KEY_SECRET)
+)
 def homepage(request):
 	currency = 'INR'
 	amount = 20000 # Rs. 200

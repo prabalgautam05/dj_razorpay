@@ -42,7 +42,10 @@ INSTALLED_APPS = [
 ]
 
 
+# filepath: c:\Users\Naman\Documents\GitHub\dj_razorpay\dj_razorpay\settings.py
 
+RAZOR_KEY_ID = 'rzp_test_ev1jM5VBiyxyo0'  
+RAZOR_KEY_SECRET = 'dQpVF43sQqr4U06uURk4GDwj'  
 
 
 
